@@ -11,7 +11,7 @@ from EnvReaderService import EnvReaderService
 ENV_PROFILE = 'production'
 #ENV_PROFILE = 'uat'
 
-reader = EnvReaderService('development')
+reader = EnvReaderService(ENV_PROFILE)
 
 MONGO_URL = 'mongodb://' \
     + reader.vars()['MONGO_USER'] + ':' \

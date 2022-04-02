@@ -12,10 +12,10 @@ class EnvReaderService:
         filename = ''
 
         if profile == 'uat':
-            filename = '../.env.uat'
+            filename = '/opt/python/.env.uat'
         
         elif profile == 'production':
-            filename = '../.env.production'
+            filename = '/opt/python/.env.production'
 
         else: # profile == 'development'
             filename = '../.env.development'
